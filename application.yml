@@ -1,1 +1,11 @@
-
+#eureka client config
+eureka:
+  instance:
+   appname: ${spring.application.name}
+   prefer-ip-address: true
+  client:
+    fetch-registry: true 
+    service-url:
+      defalutZone : http://localhost:8761/eureka
+      # now wel will use this url to register to the server
+      
